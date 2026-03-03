@@ -1,0 +1,197 @@
+* {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 18px;
+    text-align: center;
+    user-select: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    background-color: black;
+    color: white;
+    user-select: none;
+}
+
+.line {
+    width: 100%;
+    border-bottom: solid 2px #222;
+    height: 5px;
+    margin-bottom: 13px;
+}
+
+.soft {
+    color: hsl(237, 15%, 47%);
+    font-weight: bold;
+    text-shadow: 0px 1px 0px hsl(252, 19%, 57%);
+    pointer-events: none;
+}
+
+#news {
+    color: white;
+    width: 100%;
+    top: 0px;
+    height: 20px;
+    border: solid 2px #222;
+    background-color: #171717;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+#newsText {
+    white-space: nowrap;
+}
+
+.up {
+    width: 40px;
+    height: 40px;
+    border: solid 2px #333;
+    background: #333;
+    color: white;
+    display: inline-block;
+    position: sticky;
+    margin-up: 10px;
+    transition: width .2s linear;
+}
+
+.up:hover {
+    background: #555;
+    transform: scale(1.2);
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 18px;
+    max-width: 250px;
+    padding: 7px 25px;
+    text-decoration: none;
+    border: 1px solid #777;
+    background: #333;
+    color: white;
+    display: inline-block;
+    transition: width .2s linear;
+}
+
+.btn:hover {
+    cursor: pointer;
+    font-size: 18px;
+    max-width: 250px;
+    padding: 7px 25px;
+    text-decoration: none;
+    border: 1px solid #999;
+    background: #555;
+    color: white;
+    display: inline-block;
+}
+
+.cantBuy {
+    border: 1px solid #777;
+    background: #222;
+}
+
+.cantBuy:hover {
+    border: 1px solid #999;
+    background: #444;
+}
+
+.buyed {
+    border: 1px solid #777;
+    background: #474;
+
+}
+
+.buyed:hover {
+    border: 1px solid #999;
+    background: #8b8;
+}
+
+#notify {
+    z-index: 9999;
+    position: fixed;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, 0);
+    width: 400px;
+    min-height: 10px;
+    color: white;
+    border: solid 2px #222;
+    background-color: #171717;
+    padding: 7px 25px;
+    transition-duration: 0.75s;
+}
+
+#notify.hide {
+    opacity: 0;
+    top: -130px;
+}
+
+#news {
+    white-space: nowrap;
+}
+
+.upText {
+    cursor: pointer;
+    min-height: 120px;
+    max-height: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.skyB {
+    color: skyblue;
+}
+
+.green {
+    color: green;
+}
+
+.chaCanF,
+.chaCanF:hover {
+    background-color: rgb(255, 255, 0);
+    color: black;
+}
+
+.chaF,
+.chaF:hover {
+    background-color: green;
+    color: white;
+}
+
+.big {
+    font-size: 30px;
+}
+
+.tec {
+    background-color: #aba459;
+    color: black;
+}
+
+.tec:hover {
+    background-color: #e2d973;
+}
+
+.u-container {
+    width: 99%;
+    height: 25px;
+    background: #000;
+    position: fixed;
+    bottom: 10px;
+    left: 1%;
+    right: 1%;
+    z-index: 9999;
+}
+
+.u-progress {
+    width: 0%;
+    height: inherit;
+    background: #0f0;
+    transition: width .2s linear;
+}
